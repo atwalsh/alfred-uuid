@@ -44,8 +44,7 @@ if (alfy.input.toLowerCase() === 'v1') {
 } else if (alfy.input.toLowerCase() === 'v4') {
 	genUuids(uuidv4, 'v4');
 } else {
-	addOutput('Generate v4 UUIDs', '', `${process.env.keyword} v4`, 'rerun');
-	addOutput('Generate v1 UUIDs', '', `${process.env.keyword} v1`, 'rerun');
+	genUuids(uuidv4, 'v4');
 }
 
 alfy.output(output);
